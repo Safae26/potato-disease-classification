@@ -1,18 +1,18 @@
-# Potato Disease Classification
+# 🥔 Potato Disease Classification
 
 A deep learning-based solution to help farmers identify early blight, late blight, and healthy potato plants, enabling early intervention and reducing economic losses.
 
-## 🧠 Project Overview
+## Project Overview
 
-Potato farmers face significant economic threats from plant diseases, primarily **Early Blight** (fungal) and **Late Blight** (water mold). Accurate and early detection is crucial, as the treatment for each disease differs.
+Potato farmers 👨‍🌾 face significant economic threats from plant diseases, primarily **Early Blight** (fungal) and **Late Blight** (water mold). Accurate and early detection is crucial, as the treatment for each disease differs.
 
-This project, in collaboration with **AtliQ Agriculture**, delivers a scalable system where a farmer can simply take a photo of a potato plant with a mobile app and instantly receive a diagnosis (label and confidence score).
+The farmer can simply take a photo of a potato plant with a mobile app and instantly receive a diagnosis (label and confidence score).
 
 The end-to-end workflow encompasses deep learning model development, MLOps, backend API creation, and deployment to Google Cloud Platform for mobile application integration.
 
-## 🚀 Tech Stack
+## Tech Stack
 
-*   **Model Building & ML Ops:** TensorFlow / Keras, CNN, Data Augmentation, TF Dataset, TF Serving, Quantization, TensorFlow Lite
+*   **Model Building & ML Ops:** TensorFlow, CNN, Data Augmentation, TF Dataset, TF Serving, Quantization, TensorFlow Lite
 *   **Backend & API:** FastAPI
 *   **Frontend & Mobile:** React.js (Web App), React Native (Mobile App)
 *   **Cloud & Deployment:** Google Cloud Platform (GCP), Google Cloud Functions
@@ -42,18 +42,6 @@ The end-to-end workflow encompasses deep learning model development, MLOps, back
     *   Wrote serverless **Google Cloud Functions** to handle prediction requests.
     *   A **React Native** mobile app calls these cloud functions, allowing farmers to get diagnoses in real-time from the field.
 
-## 📁 Project Structure
-potato-disease-classification/
-├── data/ # Dataset and preprocessing scripts
-├── model/ # Model training scripts and exported models
-├── tf-serving/ # Configuration for TensorFlow Serving
-├── backend/ # FastAPI server code
-├── web-app/ # React.js frontend source
-├── mobile-app/ # React Native application source
-├── cloud-functions/ # Google Cloud Function code
-└── README.md
-
-
 ## 🛠️ Installation & Usage
 
 *(This section would be filled with specific commands for cloning, installing dependencies, and running different parts of the project.)*
@@ -62,27 +50,12 @@ potato-disease-classification/
 
 ### Running the Web Application Locally
 
-1.  **Start the TF Serving Container:**
-    ```bash
-    docker run ... # TF Serving command
-    ```
-2.  **Start the FastAPI Backend:**
-    ```bash
-    cd backend
-    uvicorn main:app --reload
-    ```
-3.  **Start the React Frontend:**
-    ```bash
-    cd web-app
-    npm start
-    ```
-4.  Open `http://localhost:3000` and upload a potato leaf image.
+Open `http://localhost:3000` and upload a potato leaf image.
 
 ## 👨‍🌾 Mobile Application
 
 The React Native mobile app provides a simple interface for farmers. Point the camera at a leaf, take a picture, and get an immediate diagnosis to guide treatment decisions.
 
 ## 🙏 Acknowledgments
-
-*   AtliQ Agriculture for the problem statement and collaboration.
 *   The providers of the public potato disease dataset.
+*   codebasics youtube channel
